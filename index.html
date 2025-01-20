@@ -4,13 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bike Ride to Pepperdine</title>
-    <link rel="stylesheet" href="./bulma.css">
+    <link rel="stylesheet" href="bulma.css">
+    <style>
+        :root {
+            --primary-color: #228B22; /* Forest Green */
+            --secondary-color: #1E90FF; /* Blue */
+            --accent-color: #FFD700; /* Gold */
+        }
+
+        .navbar.is-primary {
+            background-color: var(--primary-color);
+        }
+
+        .hero.is-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .button.is-light {
+            background-color: var(--accent-color);
+            color: #000;
+        }
+
+        .section.has-background-light {
+            background-color: var(--secondary-color);
+            color: #000; /* Updated to black for better readability */
+        }
+        .section.has-background-light .title{
+            color: #000;
+        }
+        .section.has-background-light .columns .column .content strong{
+            color: #000;
+        }
+
+        .footer {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .button.is-link {
+            background-color: var(--accent-color);
+            color: #000;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="#">
-                <strong>Bike Ride to Pepperdine</strong>
+                <strong>GSP Bike to Pepperdine</strong>
             </a>
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
